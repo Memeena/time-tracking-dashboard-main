@@ -1,0 +1,62 @@
+.main-card {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  @include common;
+  background-color: $color-Dark-blue;
+
+  &__details {
+    background-color: $color-Blue;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    @include common;
+  }
+
+  &__image {
+    height: 8rem;
+    width: 8rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    font-weight: $font-weight-300;
+    padding-bottom: 0.5rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+  }
+
+  &__report {
+    color: $color-Pale-Blue;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__dashboard-heading {
+    background-color: $color-Dark-blue;
+    @include common;
+    padding: 2.5rem;
+
+    &-list {
+      list-style: none;
+      color: $color-Desaturated-blue;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-item {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+
+    &-item:hover {
+      color: white;
+    }
+  }
+}

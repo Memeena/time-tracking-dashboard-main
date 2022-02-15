@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Rubik:wght@300;400;500&display=swap");
+// ### Primary
+
+$color-Blue: hsl(246, 80%, 60%);
+$color-Light-red-work: hsl(15, 100%, 70%);
+$color-Soft-blue-play: hsl(195, 74%, 62%);
+$color-Light-red-study: hsl(348, 100%, 68%);
+$color-Lime-green-exercise: hsl(145, 58%, 55%);
+$color-Violet-social: hsl(264, 64%, 52%);
+$color-Soft-orange-self-care: hsl(43, 84%, 65%);
+
+// ### Neutral
+
+$color-Very-dark-blue: hsl(226, 43%, 10%);
+$color-Dark-blue: hsl(235, 46%, 20%);
+$color-Desaturated-blue: hsl(235, 45%, 61%);
+$color-Pale-Blue: hsl(236, 100%, 87%);
+
+//font-family
+$primary-font: "Rubik", sans-serif;
+$default-font-size: 1.8rem;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-500: 500;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin common {
+  border-radius: 1.5rem;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $primary-font;
+
+  background-color: $color-Very-dark-blue;
+  // overflow: hidden;
+  // font-family: 'Fraunces', serif;
+}
+
+body {
+  padding: 4rem 2rem;
+}
