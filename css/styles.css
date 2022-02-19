@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+  background-color: #0f1424; }
+
+body {
+  padding: 4rem 2rem; }
+
+.main-card {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  border-radius: 1.5rem;
+  background-color: #1c1f4a; }
+  .main-card__details {
+    background-color: #5847eb;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem; }
+  .main-card__image {
+    height: 8rem;
+    width: 8rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 2rem; }
+  .main-card__heading {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 0.5rem; }
+  .main-card__name {
+    font-size: 2rem; }
+  .main-card__report {
+    color: #bdc1ff;
+    display: flex;
+    flex-direction: column; }
+  .main-card__dashboard-heading {
+    background-color: #1c1f4a;
+    border-radius: 1.5rem;
+    padding: 2.5rem; }
+    .main-card__dashboard-heading-list {
+      list-style: none;
+      color: #6f76c8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .main-card__dashboard-heading-item {
+      font-size: 1.8rem;
+      font-weight: 300; }
+    .main-card__dashboard-heading-item:hover {
+      color: white; }
