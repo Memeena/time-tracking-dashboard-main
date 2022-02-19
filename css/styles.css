@@ -12,11 +12,17 @@ html {
 body {
   padding: 4rem 2rem; }
 
+.time-tracking-dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: start; }
+
 .main-card {
   display: grid;
   grid-template-rows: 1fr min-content;
   border-radius: 1.5rem;
-  background-color: #1c1f4a; }
+  background-color: #1c1f4a;
+  margin-bottom: 3rem; }
   .main-card__details {
     background-color: #5847eb;
     display: flex;
@@ -55,3 +61,60 @@ body {
       font-weight: 300; }
     .main-card__dashboard-heading-item:hover {
       color: white; }
+
+.dashboard {
+  color: white;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column; }
+  .dashboard__item {
+    border-radius: 1.5rem;
+    margin-bottom: 3rem; }
+    .dashboard__item--1 {
+      background-color: #ff8c66; }
+    .dashboard__item--2 {
+      background-color: #56c2e6; }
+    .dashboard__item--3 {
+      background-color: #ff5c7c; }
+    .dashboard__item--4 {
+      background-color: #4acf81; }
+    .dashboard__item--5 {
+      background-color: #7536d3; }
+    .dashboard__item--6 {
+      background-color: #f1c65b; }
+  .dashboard__heading {
+    padding-bottom: 4rem;
+    background-position: right;
+    background-repeat: no-repeat; }
+    .dashboard__heading--1 {
+      background-image: url("/images/icon-work.svg"); }
+    .dashboard__heading--2 {
+      background-image: url("/images/icon-play.svg"); }
+    .dashboard__heading--3 {
+      background-image: url("/images/icon-study.svg"); }
+    .dashboard__heading--4 {
+      background-image: url("/images/icon-exercise.svg"); }
+    .dashboard__heading--5 {
+      background-image: url("/images/icon-social.svg"); }
+    .dashboard__heading--6 {
+      background-image: url("/images/icon-self-care.svg"); }
+  .dashboard__body {
+    border-radius: 1.5rem;
+    background-color: #1c1f4a;
+    padding: 3rem; }
+  .dashboard__subheading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem; }
+    .dashboard__subheading--content {
+      font-weight: 500; }
+  .dashboard__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    padding-top: 2rem; }
+    .dashboard__content--main {
+      font-size: 2.3rem; }
+    .dashboard__content--prev {
+      font-size: 1.5rem; }

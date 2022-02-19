@@ -45,3 +45,10 @@ html {
 body {
   padding: 4rem 2rem;
 }
+
+.time-tracking-dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  // align-items: center;
+}

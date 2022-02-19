@@ -1,0 +1,104 @@
+.dashboard {
+  color: white;
+  @include common;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    @include common;
+    margin-bottom: 3rem;
+    &--1 {
+      background-color: $color-Light-red-work;
+    }
+
+    &--2 {
+      background-color: $color-Soft-blue-play;
+    }
+
+    &--3 {
+      background-color: $color-Light-red-study;
+    }
+
+    &--4 {
+      background-color: $color-Lime-green-exercise;
+    }
+
+    &--5 {
+      background-color: $color-Violet-social;
+    }
+
+    &--6 {
+      background-color: $color-Soft-orange-self-care;
+    }
+  }
+
+  &__heading {
+    &--1 {
+      background-image: url("/images/icon-work.svg");
+    }
+
+    &--2 {
+      background-image: url("/images/icon-play.svg");
+    }
+
+    &--3 {
+      background-image: url("/images/icon-study.svg");
+    }
+
+    &--4 {
+      background-image: url("/images/icon-exercise.svg");
+    }
+
+    &--5 {
+      background-image: url("/images/icon-social.svg");
+    }
+
+    &--6 {
+      background-image: url("/images/icon-self-care.svg");
+    }
+
+    padding-bottom: 4rem;
+
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  &__body {
+    @include common;
+    background-color: $color-Dark-blue;
+    padding: 3rem;
+    // margin-top: 3rem;
+  }
+
+  &__subheading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+
+    &--content {
+      font-weight: $font-weight-500;
+    }
+
+    // &--dots {
+    // }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: $font-weight-300;
+    padding-top: 2rem;
+
+    &--main {
+      font-size: 2.3rem;
+    }
+
+    &--prev {
+      font-size: 1.5rem;
+
+      // &-span {
+      // }
+    }
+  }
+}

@@ -3,6 +3,7 @@
   grid-template-rows: 1fr min-content;
   @include common;
   background-color: $color-Dark-blue;
+  margin-bottom: 3rem;
 
   &__details {
     background-color: $color-Blue;
