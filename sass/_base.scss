@@ -52,3 +52,15 @@ body {
   justify-content: start;
   // align-items: center;
 }
+
+@media screen and (min-width: 75em) {
+  .time-tracking-dashboard {
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+}

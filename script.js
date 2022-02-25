@@ -119,6 +119,9 @@ dailyTab.addEventListener("click", function () {
       prevContent[i].textContent = arrData[i].timeframes.daily.previous + "hrs";
     }
   }
+
+  dailyTab.style.color = "white";
+  weeklyTab.style.color = monthlyTab.style.color = "hsl(236, 100%, 87%)";
 });
 
 weeklyTab.addEventListener("click", function () {
@@ -129,6 +132,9 @@ weeklyTab.addEventListener("click", function () {
         arrData[i].timeframes.weekly.previous + "hrs";
     }
   }
+
+  weeklyTab.style.color = "white";
+  dailyTab.style.color = monthlyTab.style.color = "hsl(236, 100%, 87%)";
 });
 
 monthlyTab.addEventListener("click", function () {
@@ -140,4 +146,6 @@ monthlyTab.addEventListener("click", function () {
         arrData[i].timeframes.monthly.previous + "hrs";
     }
   }
+  monthlyTab.style.color = "white";
+  dailyTab.style.color = weeklyTab.style.color = "hsl(236, 100%, 87%)";
 });

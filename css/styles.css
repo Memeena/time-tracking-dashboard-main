@@ -17,6 +17,16 @@ body {
   flex-direction: column;
   justify-content: start; }
 
+@media screen and (min-width: 75em) {
+  .time-tracking-dashboard {
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-gap: 4rem;
+    justify-content: center;
+    align-items: center; } }
+
 .main-card {
   display: grid;
   grid-template-rows: 1fr min-content;
@@ -59,8 +69,34 @@ body {
     .main-card__dashboard-heading-item {
       font-size: 1.8rem;
       font-weight: 300; }
-    .main-card__dashboard-heading-item:hover {
+    .main-card__dashboard-heading-link:hover, .main-card__dashboard-heading-link:active, .main-card__dashboard-heading-link:visited {
       color: white; }
+    .main-card__dashboard-heading-link {
+      text-decoration: none;
+      cursor: pointer; }
+
+@media screen and (min-width: 75em) {
+  .main-card {
+    margin-bottom: 0; }
+    .main-card__heading {
+      font-size: 1.5rem; }
+    .main-card__name {
+      font-size: 3rem;
+      font-weight: 300; }
+    .main-card__details {
+      flex-direction: column;
+      justify-self: stretch;
+      align-items: start;
+      padding: 2.5rem 4rem 6rem 2rem; }
+    .main-card__report {
+      margin-top: 4rem; }
+    .main-card__dashboard-heading {
+      padding-bottom: 1rem; }
+      .main-card__dashboard-heading-list {
+        flex-direction: column;
+        align-items: start; }
+      .main-card__dashboard-heading-item {
+        padding-bottom: 2rem; } }
 
 .dashboard {
   color: white;
@@ -107,7 +143,7 @@ body {
     justify-content: space-between;
     font-size: 1.8rem; }
     .dashboard__subheading--content {
-      font-weight: 500; }
+      font-weight: 400; }
   .dashboard__content {
     display: flex;
     justify-content: space-between;
@@ -118,3 +154,22 @@ body {
       font-size: 2.3rem; }
     .dashboard__content--prev {
       font-size: 1.5rem; }
+
+@media screen and (min-width: 75em) {
+  .dashboard {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(25rem, 1fr));
+    grid-template-columns: repeat(3, minmax(25rem, min-content));
+    grid-gap: 2rem;
+    justify-content: start;
+    align-items: center; }
+    .dashboard__item {
+      margin-bottom: 0; }
+    .dashboard__content {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      .dashboard__content--main {
+        font-size: 4rem; }
+      .dashboard__content--prev {
+        margin-top: 1rem; } }
