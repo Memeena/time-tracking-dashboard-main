@@ -71,7 +71,7 @@
 
 @media screen and (min-width: 75em) {
   .main-card {
-    // align-self: stretch;
+    align-self: stretch;
     margin-bottom: 0;
 
     &__heading {
@@ -80,7 +80,8 @@
 
     &__name {
       font-size: 3rem;
-      font-weight:$font-weight-300;
+      font-weight: $font-weight-300;
+      color: white;
     }
 
     &__details {

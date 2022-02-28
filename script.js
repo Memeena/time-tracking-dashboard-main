@@ -112,6 +112,13 @@ const mainContent = document.querySelectorAll(".dashboard__content--main");
 const prevContent = document.querySelectorAll(".dashboard__content--prev-span");
 const content = document.querySelectorAll(".dashboard__subheading--content");
 
+const init = function () {
+  weeklyTab.style.color = "white";
+  dailyTab.style.color = monthlyTab.style.color = "hsl(236, 100%, 87%)";
+};
+
+init();
+
 dailyTab.addEventListener("click", function () {
   for (let i = 0; i < arrData.length; i++) {
     if (content[i].textContent === arrData[i].title) {

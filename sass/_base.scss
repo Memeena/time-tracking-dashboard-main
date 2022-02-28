@@ -55,11 +55,11 @@ body {
 
 @media screen and (min-width: 75em) {
   .time-tracking-dashboard {
-    width: 100vw;
-    height: 80vh;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: min-content min-content;
-    grid-gap: 4rem;
+    grid-template-columns: minmax(25rem, min-content) min-content;
+    grid-gap: 2rem;
+    grid-auto-rows: 1fr;
     justify-content: center;
     align-items: center;
   }
