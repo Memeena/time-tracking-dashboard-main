@@ -7,29 +7,6 @@
   &__item {
     @include common;
     margin-bottom: 3rem;
-    // &--1 {
-    //   background-color: $color-Light-red-work;
-    // }
-
-    // &--2 {
-    //   background-color: $color-Soft-blue-play;
-    // }
-
-    // &--3 {
-    //   background-color: $color-Light-red-study;
-    // }
-
-    // &--4 {
-    //   background-color: $color-Lime-green-exercise;
-    // }
-
-    // &--5 {
-    //   background-color: $color-Violet-social;
-    // }
-
-    // &--6 {
-    //   background-color: $color-Soft-orange-self-care;
-    // }
   }
 
   &__heading {
@@ -75,11 +52,11 @@
     @include common;
     background-color: $color-Dark-blue;
     padding: 3rem;
-    // transform: translateY(-1rem);
+    transform: translateY(-1rem);
     cursor: pointer;
 
     &:hover {
-      background-color: rgba(white, 0.2);
+      background-color: rgba($color-Desaturated-blue, 0.25);
     }
   }
 
@@ -115,8 +92,6 @@
     &--prev {
       font-size: 1.5rem;
       color: $color-Pale-Blue;
-      // &-span {
-      // }
     }
   }
 }
@@ -124,20 +99,18 @@
 @media screen and (min-width: 75em) {
   .dashboard {
     display: grid;
-    grid-template-rows: repeat(2, minmax(25rem, 1fr));
+    grid-template-rows: repeat(2, minmax(22rem, 1fr));
     grid-template-columns: repeat(3, minmax(25rem, min-content));
+    grid-row-gap: 1rem;
     grid-column-gap: 2rem;
     justify-content: start;
-    align-items: center;
-    // grid-column-gap: 1rem;
-    // justify-items: cent;
-    // align-items: ;
+    align-items: stretch;
+
+    &__heading {
+      padding-bottom: 6rem;
+    }
     &__item {
       margin-bottom: 0;
-    }
-
-    &__body {
-      margin: -1rem 0;
     }
 
     &__content {

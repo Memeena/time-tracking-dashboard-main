@@ -19,7 +19,7 @@ body {
 
 @media screen and (min-width: 75em) {
   .time-tracking-dashboard {
-    margin: 0 auto;
+    margin: 8rem;
     display: grid;
     grid-template-columns: minmax(25rem, min-content) min-content;
     grid-gap: 2rem;
@@ -78,7 +78,7 @@ body {
 @media screen and (min-width: 75em) {
   .main-card {
     align-self: stretch;
-    margin-bottom: 0; }
+    margin-bottom: 1rem; }
     .main-card__heading {
       font-size: 1.5rem; }
     .main-card__name {
@@ -135,9 +135,10 @@ body {
     border-radius: 1.5rem;
     background-color: #1c1f4a;
     padding: 3rem;
+    transform: translateY(-1rem);
     cursor: pointer; }
     .dashboard__body:hover {
-      background-color: rgba(255, 255, 255, 0.2); }
+      background-color: rgba(111, 118, 200, 0.25); }
   .dashboard__subheading {
     display: flex;
     justify-content: space-between;
@@ -163,15 +164,16 @@ body {
 @media screen and (min-width: 75em) {
   .dashboard {
     display: grid;
-    grid-template-rows: repeat(2, minmax(25rem, 1fr));
+    grid-template-rows: repeat(2, minmax(22rem, 1fr));
     grid-template-columns: repeat(3, minmax(25rem, min-content));
+    grid-row-gap: 1rem;
     grid-column-gap: 2rem;
     justify-content: start;
-    align-items: center; }
+    align-items: stretch; }
+    .dashboard__heading {
+      padding-bottom: 6rem; }
     .dashboard__item {
       margin-bottom: 0; }
-    .dashboard__body {
-      margin: -1rem 0; }
     .dashboard__content {
       flex-direction: column;
       justify-content: flex-start;
